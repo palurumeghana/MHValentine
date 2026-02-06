@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", () => {
 const title = document.getElementById("title");
 const message = document.getElementById("message");
 const photo = document.getElementById("photo");
@@ -132,4 +132,5 @@ envelopeOverlay.addEventListener("click", () => {
   setTimeout(() => {
     envelopeOverlay.style.display = "none";
   }, 600);
+});
 });
