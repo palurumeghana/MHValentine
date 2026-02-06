@@ -22,7 +22,7 @@ const steps = [
     photo: "photos/photo1.jpg"
   },
   {
-    //title: "Hey 😏",
+    
     message: "Just a quizz\nI know you dont like these kind of quizzes. Just try it out beb",
     photo: "photos/photo2.jpg"
   },
