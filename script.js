@@ -22,7 +22,7 @@ const steps = [
     photo: "photos/photo1.jpg"
   },
   {
-    title: "Hey 😏",
+    //title: "Hey 😏",
     message: "Just a quizz\nI know you dont like these kind of quizzes. Just try it out beb",
     photo: "photos/photo2.jpg"
   },
@@ -35,9 +35,11 @@ const steps = [
     photo: "photos/photo4.jpg"
   },
   {
+   
     title: "Hmmm.......... 💘",
     message: "So...\nwill you be my Valentine? 🌹",
     photo: "photos/photo5.jpg"
+     
   }
 ];
 
@@ -59,6 +61,11 @@ yesBtn.addEventListener("click", () => {
     animatePhoto();
 
     quiz.style.display = step === 1 ? "block" : "none";
+    if (step === 3) {   // your Valentine step
+      valentineSound.play().catch(() => {
+        console.log("Sound blocked until user interacts");
+      });
+    }
   } else {
     finalScreen();
   }
@@ -112,8 +119,8 @@ function finalScreen() {
   yesBtn.textContent = "I ❤️ YOU";
   noBtn.style.display = "none";
 
-  // 🔊 Valentine audio (plays ONLY after click — browser safe)
- // valentineSound.play();
+  
+ 
 }
 // Envelope open logic
 const envelopeOverlay = document.getElementById("envelope-overlay");
