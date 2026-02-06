@@ -11,7 +11,7 @@ const quizBtns = document.querySelectorAll(".quiz-btn");
 const correctSound = document.getElementById("correctSound");
 const punchSound = document.getElementById("punchSound");
 //const Valentine = document.getElementById("valentine");
-const valentineSound = document.getElementById("valentine");
+const valentineSound = document.getElementById("valentineSound");
 
 let step = 0;
 
